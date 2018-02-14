@@ -10,3 +10,11 @@ This project intends to be a shared work of Vienna Data Science Cafe members, wi
 Please feel free to contribute.
 
 Liad Magen, February 2018
+
+
+
+
+
+Recommended tools;
+TextBlob: http://textblob.readthedocs.io/en/dev/
+spaCy: https://spacy.io/

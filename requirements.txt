@@ -1,0 +1,10 @@
+tox>=2.7.0
+logzero  # see github.com/metachris/logzero
+beautifulsoup4
+nose
+sphinx
+gensim
+spacy
+textblob
+tensorflow
+keras
