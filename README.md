@@ -8,11 +8,20 @@ We aspire in this work, to create an automated system that can scan the web, or 
 This project intends to be a shared work of Vienna Data Science Cafe members, with the purpose, beside the obvious result, to also be used for learning, and hopefully advancing the field of Natural Language Processing s Machine Learning.
 
 Please feel free to contribute.
+Project board: https://trello.com/b/KmMEPjfT/keep-current
+Chat: 
+
+
 
 Liad Magen, February 2018
 
 
 
+
+How to begin:
+https://github.com/collections/machine-learning
+https://github.com/keon/awesome-nlp
+http://nltk.org/book/
 
 
 Recommended tools;
