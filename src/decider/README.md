@@ -13,4 +13,4 @@ To decide if a document should enter the aggregated user's document list
 
 
 ### How?
-- TBD
+- consider using the [coritcal.io semantical folding](http://www.cortical.io/static/downloads/semantic-folding-theory-white-paper.pdf) approach for classifciation 
