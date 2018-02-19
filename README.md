@@ -8,9 +8,9 @@ We aspire in this work, to create an automated system that can scan the web, or 
 This project intends to be a shared work of Vienna Data Science Cafe members, with the purpose, beside the obvious result, to also be used for learning, and hopefully advancing the field of Natural Language Processing s Machine Learning.
 
 Please feel free to contribute.
-Project board: https://trello.com/b/KmMEPjfT/keep-current
-Chat: 
 
+
+Project board is on [Trello](https://trello.com/b/KmMEPjfT/keep-current) and we use [Slack](https://vdsg.slack.com/messages/C9BNW5N9L/details) as our communication channel
 
 
 Liad Magen, February 2018
@@ -18,12 +18,12 @@ Liad Magen, February 2018
 
 
 
-How to begin:
-https://github.com/collections/machine-learning
-https://github.com/keon/awesome-nlp
-http://nltk.org/book/
+### How to begin:
+* https://github.com/collections/machine-learning
+* https://github.com/keon/awesome-nlp
+* http://nltk.org/book/
 
 
-Recommended tools;
-TextBlob: http://textblob.readthedocs.io/en/dev/
-spaCy: https://spacy.io/
+### Recommended tools;
+* TextBlob: http://textblob.readthedocs.io/en/dev/
+* spaCy: https://spacy.io/
