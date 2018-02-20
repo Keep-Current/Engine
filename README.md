@@ -1,5 +1,5 @@
 # Keep-Current
-After studying a topic, keeping current with the news, published papers, advanced technologies and such prooved to be a hard work.
+After studying a topic, keeping current with the news, published papers, advanced technologies and such proved to be a hard work.
 One must attend conventions, subscribe to different websites, go over different emails, alerts and such.
 
 We aspire in this work, to create an automated system that can scan the web, or a list of trusted sources, classify and categorize the documents it finds according to the given topics, summarize them and present it as a timely digest to the user, wither by email or within a site.
