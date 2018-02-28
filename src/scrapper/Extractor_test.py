@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-
+import pytest
 import Extractor
 
-def 
+class Extractor_test(unittest.TestCase):
+
+    def test(self):
+        assert true 

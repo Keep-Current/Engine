@@ -3,13 +3,13 @@
 The Extractor receives a URL and tries to estimate its type
 (HTML, PDF, XML...)
 """
-
 import datetime
+import BeautifulSoup
+import HTMLExtractor
 from urllib import request
 from logzero import logger
-import HTMLExtractor
 
-class Extractor():
+class Extractor(object):
     
     def __init__(self, parser="", url = ""):
         self.initTime = datetime.datetime.now().timestamp()
@@ -31,4 +31,5 @@ class Extractor():
         logger.info(self.initTime - self.endTime)
 
     def execute():
+        pass
 

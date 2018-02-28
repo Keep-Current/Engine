@@ -5,5 +5,5 @@ python:
 install:
   - pip install -r requirements.txt
 # command to run the tests:
-#script:
-# - py.test
+script:
+ - py.test
