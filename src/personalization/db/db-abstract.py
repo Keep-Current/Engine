@@ -16,6 +16,8 @@ class DBAbstract(object):
      Topics (Themes)
      Sources (URLs)              --> a list of trusted locations where to 
                                      crawl and look for content
+     Sources-Locations              For the first version, store the xpath
+                                    where the content is, for retrieval
      Processed Articles (Texts)
 
     Relations:
