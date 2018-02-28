@@ -5,7 +5,7 @@ from logzero import logger
 from bs4 import BeautifulSoup
 from bs4 import UnicodeDammit
 
-class HTMLExtractor():
+class HTMLExtractor(object):
     """
     The HTMLExtractor recieves an HTML based URL and extracts the Text out of it.
 
@@ -60,5 +60,5 @@ class HTMLExtractor():
         logger.info(self.initTime - self.endTime)
 
     def execute():
-
+        pass
 
