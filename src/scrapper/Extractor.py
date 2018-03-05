@@ -4,7 +4,7 @@ The Extractor receives a URL and tries to estimate its type
 (HTML, PDF, XML...)
 """
 import datetime
-import bs4
+from bs4 import BeautifulSoup
 from urllib import request
 from logzero import logger
 

@@ -1,11 +1,14 @@
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
+from abc import ABC
 
-class DBAbstract(object):
+
+class DbArticleBase(ABC):
     """ 
-    
+
     This is the abstract interface for communicating with the DB
     We begin with an implementation of MongoDB
-    
+
     ToDo: decide if to use strict interface (list of arguments) or an object
     method, where the arguments are the object's properties and the functions
     scans the object and saves them in an internfal implementation
@@ -25,9 +28,6 @@ class DBAbstract(object):
      - Processed Articles should have a relation to the sources 
             (1 to 1? 1 to many? depends if we summarize multiple sources)
     """
-
-
-
 
     """
 
@@ -55,7 +55,6 @@ class DBAbstract(object):
         """
         raise NotImplementedError
 
-
     """
 
     Sources, inputs and processed sources (after they have passed 
@@ -75,12 +74,5 @@ class DBAbstract(object):
         source_url: string
         topics: list[string]
         summary: list[string]
-        """
-        raise NotImplementedError
-
-
-    def get_user_details(self, user_guid):
-        """
-        Retrieves user's data according to the guid: email, name, etc.
         """
         raise NotImplementedError
