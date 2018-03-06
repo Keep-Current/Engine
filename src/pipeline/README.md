@@ -1,5 +1,5 @@
 ## The pipeline
-The pipeline is responsible of running the different modules together.
+The pipeline runs the different modules together.
 
 ## How?
 Every document from the scrapper is running through the pipeline, in order to be categorized and extracted.

@@ -5,11 +5,9 @@ Its role is to clean the unnecessary HTML sections and elements from the documen
 It recieves from the scrapper an HTML file, and needs to determine which sections are unnecessary and irrelevant (menus, ads, maps, photos, etc)
 
 input: HTML Document
-output: parsed text document (lists of lists of stupples)
+output: Clean text document
 
 ### How?
-1. Detect the document type (pdf, text, html)
-2. break the document down to pargraphs, sentences and tokenized words.
-3. Perform POS tagging
-4. Perform entity detection
-5. Perform relation detection
+ Detect the document type (pdf, text, html). 
+ if it is HTML - consider using readability https://github.com/mozilla/readability to simplify it.
+ if it's PDF - extract he content into text.

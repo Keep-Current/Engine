@@ -1,14 +1,16 @@
 ## Objective:
-To decide if a document should enter the aggregated user's document list
+To decide if a document should enter the aggregated user's document list.
 
 ### Input:
-- user's key interest topics
-- user's historical document lists, and their feedbacks
-- the parsed document
-- relevance probabilities (outputs from the classifier)
+- retrieve from the DB users key interest topics (represented as a vector)
+- a parsed document representation (vector? matrix?)
 
 ### ouput:
-- the probability of having the given document in the aggregated list
+- the distance between each user's vector to the given document 
+
+OR:
+
+- the probability of a positve relation between a certain document to the users' interest vector
 
 
 
