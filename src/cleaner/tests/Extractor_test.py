@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import pytest
-from scrapper import Extractor
+from cleaner import Extractor
 
 class Extractor_test(object):
 
