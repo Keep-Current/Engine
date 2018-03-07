@@ -15,4 +15,10 @@ OR:
 
 
 ### How?
-- consider using the [coritcal.io semantical folding](http://www.cortical.io/static/downloads/semantic-folding-theory-white-paper.pdf) approach for classifciation 
+The name was intentionally was not set to be 'vector-distance-measure' or anything in this direction, in order to leave room for creativity as for how should the relativity of one document to another is measured.
+
+Ideas to consider:
+- using the [coritcal.io semantical folding](http://www.cortical.io/static/downloads/semantic-folding-theory-white-paper.pdf) approach for classifciation 
+- using LDA
+- different methods for vector-distance
+- identifying clusters within matrices 

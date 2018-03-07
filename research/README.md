@@ -1,0 +1,1 @@
+This is the place for notebooks with ideas or comparisson between models
