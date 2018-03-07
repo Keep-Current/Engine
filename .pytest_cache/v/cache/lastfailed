@@ -1,3 +1,4 @@
 {
+  "src/cleaner/tests/Extractor_test.py": true,
   "src/scrapper/Extractor_test.py": true
 }

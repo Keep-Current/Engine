@@ -7,18 +7,19 @@
 # Use an Floydhub deeplearning docker as a parent image
 # https://github.com/floydhub/dl-docker
 FROM floydhub/dl-docker:cpu
+# FROM python:3.6
 
-# Set the working directory to /keep-current
-WORKDIR /keep-current
+# Set the working directory of keep-current to /src
+WORKDIR /src
 
 # Copy the current directory contents into the container at /keep-current
-ADD . /keep-current
+ADD . /src
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
-# Make port 80 available to the world outside this container
-EXPOSE 80
+# Make port 9090 available to the world outside this container
+EXPOSE 9090
 
 # Define environment variable
 ENV NAME World

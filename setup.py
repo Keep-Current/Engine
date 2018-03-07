@@ -37,5 +37,7 @@ setup(name='KeepCurrent',
       packages=find_packages(exclude=['tests']),
       package_data={'keepCurrent': ['architectures/*.arch']},
       scripts=[],
-      install_requires=['numpy'],
-test_suite='tests')
+      install_requires=[
+          'numpy'
+      ],
+      test_suite='tests')
