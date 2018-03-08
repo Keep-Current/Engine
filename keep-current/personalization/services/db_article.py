@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 from abc import ABC
+from abc import abstractmethod
 
 
 class DbArticleBase(ABC):
@@ -37,18 +38,21 @@ class DbArticleBase(ABC):
         To Decide: should we support hierarchy of topics?
 
     """
+    @abstractmethod
     def get_topics(self):
         """
         Get a list of currently available topics/themes in the system
         """
         raise NotImplementedError
 
+    @abstractmethod
     def save_new_topic(self, topic):
         """
         Save a new topics/themes.
         """
         raise NotImplementedError
 
+    @abstractmethod
     def save_user_topics_relation(self, user_guid, topics):
         """
         Connect a list of preferred topics with the user
@@ -61,6 +65,7 @@ class DbArticleBase(ABC):
     the pipleline)
     
     """
+    @abstractmethod
     def save_source(self, url, topics):
         """
         adds a new source to the list of sources with its assigned 
@@ -68,6 +73,7 @@ class DbArticleBase(ABC):
         """
         raise NotImplementedError
 
+    @abstractmethod
     def save_processed_source(self, source_content):
         """
         source_content should be an object that contains the following:
