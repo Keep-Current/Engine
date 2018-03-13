@@ -8,9 +8,10 @@ from bs4 import BeautifulSoup
 from urllib import request
 from logzero import logger
 
+
 class Extractor(object):
-    
-    def __init__(self, parser="", url = ""):
+
+    def __init__(self, parser="", url=""):
         self.initTime = datetime.datetime.now().timestamp()
         self.url = url
         self.parser = parser
@@ -20,15 +21,11 @@ class Extractor(object):
         self.url = url
 
         with request.urlopen(self.url) as response:
-          html = response.read().decode('utf8')
-        
+            html = response.read().decode('utf8')
+
         self.soup = BeautifulSoup(html, self.parser)
         return self.soup.get_text()
 
     def __exit__(self):
         self.endTime = datetime.datetime.now().timestamp()
         logger.info(self.initTime - self.endTime)
-
-    def execute():
-        pass
-

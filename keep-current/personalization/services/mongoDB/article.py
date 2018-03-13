@@ -8,10 +8,14 @@ using: https://api.mongodb.com/python/current/
 """
 from personalization.services.db_article import DbArticleBase
 from pymongo import MongoClient
+from personalization.common.settings import DBSettings
 
-class MongoDB (DbArticleBase):
+class Article (DbArticleBase):
     
     def __init__(self, *args, **kwargs):
-        connection_string = 'mongodb://....'
-        client = MongoClient(connection_string)
+        self.connection_string = DBSettings['connection']['port']
+
+
+    def connect(self):
+        client = MongoClient(self.connection_string)
         client.close()
