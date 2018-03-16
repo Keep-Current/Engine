@@ -9,10 +9,10 @@ VERSION_PATH = path.join(SCRIPT_DIR, 'keep-current', 'version.py')
 
 with open(VERSION_PATH, 'r') as version_file:
     exec(version_file.read())
-VERSION = __version__ #@UndefinedVariable
+VERSION = __version__  # @UndefinedVariable
 
-LONG_DESCRIPTION = ' After studying a topic, keeping current with the news, ' /
-                   ' published papers, advanced technologies and such '/
+LONG_DESCRIPTION = ' After studying a topic, keeping current with the news, ' \
+                   ' published papers, advanced technologies and such ' \
                    ' proved to be a hard work.' \
                    ' This automated tool aspire to make this process easier'
 KEYWORDS = 'neural network language modeling machine learning research'
@@ -28,7 +28,7 @@ setup(name='KeepCurrent',
       version=VERSION,
       author='Liad Magen',
       author_email='liad.magen@gmail.com',
-      url='https://github.com/liadmagen/Keep-Current,
+      url='https: // github.com / liadmagen / Keep - Current,
       description='Toolkit for neural network language modeling using Theano',
       long_description=LONG_DESCRIPTION,
       license='Apache License, Version 2.0',
@@ -38,6 +38,24 @@ setup(name='KeepCurrent',
       package_data={'keepCurrent': ['architectures/*.arch']},
       scripts=[],
       install_requires=[
-          'numpy'
+          'numpy',
+          'tox,
+          'logzero
+          'beautifulsoup4',
+          'scrapy',
+          'nltk',
+          'gensim',
+          'spacy',
+          'textblob',
+          'tensorflow',
+          'keras',
+          'tornado',
+          'pymongo',
+          'Flask',
+          'connexion',
+          'Flask-Injector',
+          'fastavro',
+          'nose',
+          'sphinx'
       ],
       test_suite='tests')
