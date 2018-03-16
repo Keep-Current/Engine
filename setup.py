@@ -39,8 +39,8 @@ setup(name='KeepCurrent',
       scripts=[],
       install_requires=[
           'numpy',
-          'tox,
-          'logzero
+          'tox',
+          'logzero',
           'beautifulsoup4',
           'scrapy',
           'nltk',
