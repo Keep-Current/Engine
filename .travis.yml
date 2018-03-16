@@ -13,10 +13,10 @@ install:
   # Useful for debugging any issues with conda
   - conda info -a
 
-  - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION dep1 dep2 ...
+  - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION 
   - source activate test-environment
-  #- python setup.py install
-  - pip install -r requirements.txt
+  - python setup.py install
+  #- pip install -r requirements.txt
 # command to run the tests:
 script:
  - py.test
