@@ -39,6 +39,7 @@ setup(name='KeepCurrent',
       scripts=[],
       install_requires=[
           'numpy',
+          'html5lib==0.9999999',
           'tox',
           'logzero',
           'beautifulsoup4',
