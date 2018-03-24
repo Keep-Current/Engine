@@ -5,13 +5,13 @@ One must attend conventions, subscribe to different websites, go over different 
 We aspire in this work, to create an automated system that can scan the web, or a list of trusted sources, classify and categorize the documents it finds according to the given topics, summarize them and present it as a timely digest to the user, whether by email or within a site.
 
 
-This project intends to be a shared work of Vienna Data Science Cafe members, with the purpose, beside the obvious result, to also be used for learning, and hopefully advancing the Natural Language Processing / Machine Learning field by exploring and comparing different models.
+This project intends to be a shared work of *Vienna Data Science Cafe* (VDSG) members, with the purpose, beside the obvious result, to also be used for learning, and hopefully advancing the Natural Language Processing / Machine Learning field by exploring and comparing different models.
 
 
 Please feel free to contribute.
 
 
-Project board is on [Trello](https://trello.com/b/KmMEPjfT/keep-current) and we use [Slack](https://vdsg.slack.com/messages/C9BNW5N9L/details) as our communication channel
+Project board is on [Trello](https://trello.com/b/KmMEPjfT/keep-current) and we use [Slack](https://vdsg.slack.com/messages/C9BNW5N9L/details) as our communication channel.
 
 
 Liad Magen, February 2018
