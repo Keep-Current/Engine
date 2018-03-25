@@ -1,5 +1,8 @@
 # Keep-Current
 
+<!-- Badges section here. -->
+[![Build Status](https://img.shields.io/travis/liadmagen/Keep-Current-Site/master.svg?label=travis)][travis-badge-url]
+
 After studying a topic, keeping current with the news, published papers, advanced technologies and such proved to be a hard work.
 One must attend conventions, subscribe to different websites and newsletters, go over different emails, alerts and such while filtering the relevant data out of these sources.
 
@@ -32,4 +35,10 @@ We lean heavily on existing tools as well as developing new methods. We are cola
 * [TextBlob](http://textblob.readthedocs.io/en/dev/)
 * [spaCy](https://spacy.io/)
 
-If you wish to assist in different aspects (Data Engineering / Web development / DevOps), we have divided the project to several additional repositories focusing on these topics.
+If you wish to assist in different aspects (Data Engineering / Web development / DevOps), we have divided the project to several additional repositories focusing on these topics:
+
+* Web Development & UI/UX experiments can be found in our [App repository](https://github.com/liadmagen/Keep-Current-App)
+* Data Engineering tasks are more than welcomed in our [Data Engineering (DE) repository](https://github.com/liadmagen/Keep-Current-DE)
+* Devops tasks are all across the project. We are trying to develop this project in a serverless architecture, and currently looking into Docker and Kubernetes as well as different hosting providers and plans. Feel free to join the discussion and provide your input!
+
+[travis-badge-url]: https://travis-ci.org/liadmagen/Keep-Current.svg?branch=master
