@@ -5,7 +5,7 @@ from os import path
 from setuptools import setup, find_packages
 
 SCRIPT_DIR = path.dirname(path.realpath(__file__))
-VERSION_PATH = path.join(SCRIPT_DIR, 'keep-current', 'version.py')
+VERSION_PATH = path.join(SCRIPT_DIR, 'keepcurrent', 'version.py')
 
 with open(VERSION_PATH, 'r') as version_file:
     exec(version_file.read())
