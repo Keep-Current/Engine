@@ -8,7 +8,9 @@ One must attend conventions, subscribe to different websites and newsletters, go
 
 In this project, we aspire to create a platform for students, researchers, professionals and enthusiasts to discover news on relevant topics. The users are encouraged to constantly give a feedback on the suggestions, in order to adapt and personalize future results.
 
-We aspire to create an automated system that scans the web, through a list of trusted sources, classify and categorize the documents it finds, and match them to the different users, according to their interest. It then presents it as a timely summarized digest to the user, whether by email or within a site.
+The goal is to create an automated system that scans the web, through a list of trusted sources, classify and categorize the documents it finds, and match them to the different users, according to their interest. It then presents it as a timely summarized digest to the user, whether by email or within a site.
+
+## Who are we?
 
 This project intends to be a shared work of *Vienna Data Science Cafe* Meet-Up members, with the purpose, beside the obvious result, to also be used as a learning platform, while advancing the Natural Language Processing / Machine Learning field by exploring, comparing and hacking different models.
 
@@ -34,7 +36,11 @@ We lean heavily on existing tools as well as developing new methods. We are cola
 
 * [TextBlob](http://textblob.readthedocs.io/en/dev/)
 * [spaCy](https://spacy.io/)
+* [Vowpal Wabbit](https://github.com/JohnLangford/vowpal_wabbit/wiki)
 
+## The repository
+
+This repository is the documents personalized recommendation engine.
 If you wish to assist in different aspects (Data Engineering / Web development / DevOps), we have divided the project to several additional repositories focusing on these topics:
 
 * Web Development & UI/UX experiments can be found in our [App repository](https://github.com/liadmagen/Keep-Current-App)
