@@ -25,4 +25,4 @@ EXPOSE 9090
 ENV NAME World
 
 # Run app.py when the container launches
-CMD ["python", "setup.py"]
+CMD ["python", "keepcurrent/main.py"]
