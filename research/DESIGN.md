@@ -22,6 +22,7 @@ _STAGE_X_
 
 * Doc_Similarity: learned with deep learning techniques (word embeddings, siamese networks, ...)
 * User_Similarity: taken from deep learned matrix (embedding, ...)
+* Topic_Modeling: learn keywords from documents
 * Recommendation: combination based on learned weights
 
 
