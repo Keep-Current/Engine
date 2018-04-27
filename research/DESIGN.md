@@ -7,7 +7,7 @@ Description: Based on language patterns in documents and user ratings, the engin
 ## Dev Stages
 _STAGE_01_ (Deadline 17.05.2018)
 
-* Doc_Similarity only: based on tf-idf or doc2vec
+* Doc_Similarity only: based on tf-idf or doc2vec combined with nearest neighbor search
 * Recommendation: top-N docs from Doc_Similarity
 
 _STAGE_02_
