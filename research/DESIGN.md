@@ -70,6 +70,13 @@ _STAGE_X_
 
 Approaches to evaluate: tf-idf + similiarity_measure (eg cosine similarity), doc2vec, ...
 
+Evaluation:
+
+|What                                | Measure        | Metric       |
+|:-----------------------------------|:---------------|:-------------|
+| Discriminate clusters of documents | Correct topics | TBA          |
+| Discriminate writing style         | Correct author | TBA          |
+
 
 #### Item_Similarity
 

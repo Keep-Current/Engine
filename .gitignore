@@ -187,3 +187,7 @@ fabric.properties
 ### vscode ###
 .vscode
 
+
+### nltk specific ###
+nltk/
+
