@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import pytest
-from cleaner.Extractor import Extractor
+#from cleaner.Extractor import Extractor
 
 
 class Extractor_test(object):
