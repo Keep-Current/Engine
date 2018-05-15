@@ -1,6 +1,7 @@
 # Keep-Current
 
 <!-- Badges section here. -->
+[![BCH compliance](https://bettercodehub.com/edge/badge/Keep-Current/Engine?branch=master)](https://bettercodehub.com/)
 [![Build Status](https://img.shields.io/travis/liadmagen/Keep-Current-Site/master.svg?label=travis)][travis-badge-url]
 
 After studying a topic, keeping current with the news, published papers, advanced technologies and such proved to be a hard work.
