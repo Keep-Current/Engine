@@ -22,12 +22,15 @@ If you're new to Machine Learning, we suggest starting by reading the following 
 * [Natural Language Processing in Python Book](http://nltk.org/book/)
 * [Keon's awesome-nlp!](https://github.com/keon/awesome-nlp)
 
+If you wanna dig deeper in theories and methods which are relevant to developing this Engine, have a look at our curated reading list: `docs/ReadingList.md`
+
 ### Recommended tools:
 
 We lean heavily on existing tools as well as developing our own new methods. We are colaborating through Google Colab notebooks. Among the existing tools we are using: 
 
 * [TextBlob](http://textblob.readthedocs.io/en/dev/)
 * [spaCy](https://spacy.io/)
+* [NLTK](https://www.nltk.org/)
 
 ### Vision & Roadmap
 

@@ -68,13 +68,18 @@ _STAGE_X_
 
 #### Doc_Similarity
 
-Approaches to evaluate: tf-idf + similiarity_measure (eg cosine similarity), doc2vec, ...
+Approaches to evaluate:
+
+[x] tf-idf + similiarity_measure (eg cosine similarity)
+[ ] doc2vec
+[ ] compare sequence of topic vectors (simplified from Maheschwari et al, 2017)
+[ ] ...
 
 Evaluation:
 
 |What                                | Measure        | Metric       |
 |:-----------------------------------|:---------------|:-------------|
-| Discriminate clusters of documents | Correct topics | TBA          |
+| Discriminate clusters of documents | Correct topics | Precision    |
 | Discriminate writing style         | Correct author | TBA          |
 
 

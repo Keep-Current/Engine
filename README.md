@@ -37,6 +37,7 @@ We lean heavily on existing tools as well as developing new methods. We are cola
 
 * [TextBlob](http://textblob.readthedocs.io/en/dev/)
 * [spaCy](https://spacy.io/)
+* [NLTK](https://www.nltk.org/)
 * [Vowpal Wabbit](https://github.com/JohnLangford/vowpal_wabbit/wiki)
 
 ## The repository
