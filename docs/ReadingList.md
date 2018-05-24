@@ -1,5 +1,5 @@
 # Engine: Reading List
-This is a curated reading list of relevant resources for topics, which are related to the Engine devolpment.
+This is a curated reading list of relevant resources for topics, which are related to the Engine development.
 
 ## NLP
 
@@ -12,6 +12,12 @@ This is a curated reading list of relevant resources for topics, which are relat
 ### Advanced
 * Quoc Le / Tomas Mikolov, 2014: [Distributed Representations of Sentences and Documents](https://arxiv.org/pdf/1405.4053.pdf)
 * Jey Han Lau / Timothy Baldwin, 2016: [An Empirical Evaluation of doc2vec with Practical Insights into Document Embedding Generation](https://arxiv.org/pdf/1607.05368)
+* David Blei / Andrew Ng / Michael Jordan, 2003: [Latent dirichlet allocation](http://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf). Journal of machine Learning research, 993- 1022
+* Armand Joulin / Edouard Grave / Piotr Bojanowski / Tomas Mikolov, 2016:
+[Bag of Tricks for Efficient Text Classification](https://arxiv.org/pdf/1607.01759.pdf)
+* Vladimir Zolotov / David Kung, 2017: [Analysis and Optimization of fastText Linear Text Classifier](https://arxiv.org/pdf/1702.05531.pdf)
+* Pay / Tayfun / Lucci, 2017: "Automatic keyword extraction: An ensemble method." In: Big Data (Big Data), 2017 IEEE International Conference
+* Tao Lei / Regina Barzilay / Tommi Jaakkola, 2016: [Rationalizing Neural Predictions](https://arxiv.org/pdf/1606.04155.pdf)
 * Gidi Shperber, 2017: [A gentle introduction to Doc2Vec](https://medium.com/scaleabout/a-gentle-introduction-to-doc2vec-db3e8c0cce5e)
 
 
@@ -26,9 +32,15 @@ evaluation](https://ac.els-cdn.com/S1110866515000341/1-s2.0-S1110866515000341-ma
 * Ankur Tomar, 2017: [ITEM-ITEM Collaborative filtering Recommender System in Python](https://medium.com/@tomar.ankur287/item-item-collaborative-filtering-recommender-system-in-python-cf3c945fae1e)
 
 ### Advanced
+* Chong Wang / David Blei, 2011: [Collaborative topic modeling for recommending scientific articles](http://www.cs.columbia.edu/~blei/papers/WangBlei2011.pdf). In ACM: SIGKDD, pages 448–456
+* Lihong Li et al., 2012: [A contextual-bandit approach to personalized news article recommendation](https://arxiv.org/pdf/1003.0146.pdf)
 * Christoph Trattner et al., 2018: [Evaluating Group Recommender
 Systems](http://www.christophtrattner.info/pubs/group_recsys_trattner.pdf)
+* Marco Ribeiro et al., 2016: ["Why Should I Trust You?": Explaining the Predictions of Any Classifier](https://arxiv.org/pdf/1602.04938.pdf)
 * Steeve Huang, 2018: [Introduction to Recommender System. Part 2 (Neural Network Approach)](https://towardsdatascience.com/introduction-to-recommender-system-part-2-adoption-of-neural-network-831972c4cbf7)
 * Shikar Gupta, 2017: [Collaborative Filtering and Embeddings — Part 1](https://towardsdatascience.com/collaborative-filtering-and-embeddings-part-1-63b00b9739ce) & [Collaborative Filtering and Embeddings — Part 2](https://towardsdatascience.com/collaborative-filtering-and-embeddings-part-2-919da17ecefb)
 
+
+## Miscellaneous
+* Michael Janner / Karthik Narasimhan / Regina Barzilay, 2017: [Representation learning for grounded spatial reasoning](https://arxiv.org/pdf/1707.03938.pdf)
 
