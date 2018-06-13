@@ -3,11 +3,12 @@ from flask import Blueprint, request, Response
 
 from centrifuge.use_cases import request_objects as req
 from centrifuge.shared import response_object as res
-from centrifuge.repository import arxiv_repo as ar
-from centrifuge.use_cases import arxiv_document_use_case as uc
-from centrifuge.serializers.json import arxiv_document_serializer as ser
+from centrifuge.serializers.json import document_serializer as ser
 
-blueprint = Blueprint('arxiv', __name__)
+from centrifuge.repository import crawler_arxiv_repo as ar
+from centrifuge.use_cases import extract_keywords_use_case as uc
+
+blueprint = Blueprint('keywords', __name__)
 
 STATUS_CODES = {
     res.ResponseSuccess.
@@ -17,23 +18,23 @@ STATUS_CODES = {
     res.ResponseFailure.SYSTEM_ERROR: 500
 }
 
-@blueprint.route('/arxiv', methods=['GET'])
+@blueprint.route('/keywords', methods=['GET'])
 def arxiv():
     qrystr_params = {
-        'filters': {},
+        'doc': {},
     }
 
     for arg, values in request.args.items():
-        if arg.startswith('filter_'):
-            qrystr_params['filters'][arg.replace('filter_', '')] = values
+        if arg.startswith('doc_'):
+            qrystr_params['doc'][arg.replace('doc_', '')] = values
 
-    request_object = req.ArxivDocumentListRequestObject.from_dict(qrystr_params)
+    request_object = req.DocumentKeywordsRequestObject.from_dict(qrystr_params)
 
-    repo = ar.ArxivRepo()
+    repo = ar.CrawlerArxivRepo()
     use_case = uc.ArxivDocumentListUseCase(repo)
 
     response = use_case.execute(request_object)
 
-    return Response(json.dumps(response.value, cls=ser.ArxivDocEncoder),
+    return Response(json.dumps(response.value, cls=ser.DocEncoder),
                     mimetype='application/json',
                     status=STATUS_CODES[response.type])
