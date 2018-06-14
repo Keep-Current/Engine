@@ -1,7 +1,7 @@
 from centrifuge.shared import use_case as uc
 from centrifuge.shared import response_object as res
 
-from centrifuge.actions.topics import extract_topics
+from centrifuge.actions.topics import document_similarity
 
 class CompareDocumentListUseCase(uc.UseCase):
 
@@ -11,9 +11,9 @@ class CompareDocumentListUseCase(uc.UseCase):
     def process_request(self, request_object):
         unparsed_documents = self.repo.list(filters=request_object.filters)
 
-        topic_extractor = extract_topics.TopicExtractor()
-        topic_extractor.initialize_corpus()
+        measure_similarity = document_similarity.DocSimilarity()
+        measure_similarity.initialize_corpus()
 
-        parsed_documents = topic_extractor.compare_docs(unparsed_documents)
+        parsed_documents = measure_similarity.compare_docs(unparsed_documents)
         
         return res.ResponseSuccess(parsed_documents)

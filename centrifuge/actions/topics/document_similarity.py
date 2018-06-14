@@ -2,13 +2,15 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.stem.porter import PorterStemmer
 from gensim import corpora, models, similarities
 
+import os
 import nltk
 
 class DocSimilarity(object):
 
     def __init__(self, base_filename='reasoning'):
-        self.dictionary = corpora.Dictionary.load(base_filename + '_corpura.dict')
-        self.corpus = corpora.MmCorpus(base_filename + '_bow.mm')
+        dir_path = os.path.dirname(os.path.realpath(__file__)) + '\\'
+        self.dictionary = corpora.Dictionary.load(dir_path + base_filename + '_corpura.dict')
+        self.corpus = corpora.MmCorpus(dir_path + base_filename + '_bow.mm')
 
     def initialize_corpus(self):
         # Transformator:
@@ -45,6 +47,11 @@ class DocSimilarity(object):
             doc {string} -- a document to be transformed
         """
         return self.lsi_model[self.doc_to_bow(doc)]
+
+    def compare_doc(self, index, doc):
+        vec_bow = self.dictionary.doc2bow(doc.lower().split())
+        vec_lsi = self.lsi_model[vec_bow]
+        yield index[vec_lsi]
     
     def compare_docs(self, doc_list):
         """
@@ -54,8 +61,5 @@ class DocSimilarity(object):
         # get the base corpus space
         index = similarities.MatrixSimilarity(self.lsi_model[self.corpus]) 
         
-        for doc in doc_list:
-            vec_bow = self.dictionary.doc2bow(doc.lower().split())
-            vec_lsi = self.lsi_model[vec_bow]
-            sims = index[vec_lsi]
-        
+        sims = [self.compare_doc(index, doc) for doc in doc_list]        
+        return sims
