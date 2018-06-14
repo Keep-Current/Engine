@@ -8,7 +8,7 @@ from centrifuge.serializers.json import document_serializer as ser
 from centrifuge.repository import crawler_arxiv_repo as ar
 from centrifuge.use_cases import extract_keywords_use_case as uc
 
-blueprint = Blueprint('keywords', __name__)
+blueprint = Blueprint('compare', __name__)
 
 STATUS_CODES = {
     res.ResponseSuccess.
@@ -18,7 +18,7 @@ STATUS_CODES = {
     res.ResponseFailure.SYSTEM_ERROR: 500
 }
 
-@blueprint.route('/keywords', methods=['GET'])
+@blueprint.route('/compare', methods=['GET'])
 def arxiv():
     qrystr_params = {
         'doc': {},
@@ -31,7 +31,6 @@ def arxiv():
     request_object = req.DocumentKeywordsRequestObject.from_dict(qrystr_params)
 
     repo = ar.CrawlerArxivRepo()
-    # ToDo: change this when the keyowrd extraction is ready
     use_case = uc.CompareDocumentListUseCase(repo)
 
     response = use_case.execute(request_object)

@@ -1,6 +1,6 @@
 import pandas as pd
 
-from gensim.corpora import HashDictionary, MmCorpus
+from gensim.corpora import Dictionary, HashDictionary, MmCorpus
 from gensim import utils 
 
 DEFAULT_DICT_SIZE = 100000
@@ -33,3 +33,7 @@ MmCorpus.serialize('nips_bow.mm', bow_corpus, progress_cnt=10000)
 
 hash_dictionary.filter_extremes(no_below=20, no_above=0.1, keep_n=DEFAULT_DICT_SIZE)
 hash_dictionary.save_as_text('nips_wordids.txt.bz2')
+hash_dictionary.save('nips_corpura_hash.dict')
+
+dictionary = Dictionary(tokenized_corpus)
+dictionary.save('nips_corpura.dict')
