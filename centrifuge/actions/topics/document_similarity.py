@@ -8,7 +8,7 @@ import nltk
 class DocSimilarity(object):
 
     def __init__(self, base_filename='reasoning'):
-        dir_path = os.path.dirname(os.path.realpath(__file__)) + '\\'
+        dir_path = os.path.dirname(os.path.realpath(__file__)) + '/'
         self.dictionary = corpora.Dictionary.load(dir_path + base_filename + '_corpura.dict')
         self.corpus = corpora.MmCorpus(dir_path + base_filename + '_bow.mm')
 
