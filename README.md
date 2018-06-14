@@ -2,7 +2,7 @@
 
 <!-- Badges section here. -->
 [![BCH compliance](https://bettercodehub.com/edge/badge/Keep-Current/Engine?branch=master)](https://bettercodehub.com/)
-[![Build Status](https://img.shields.io/travis/liadmagen/Keep-Current-Site/master.svg?label=travis)][travis-badge-url]
+[![Build Status](https://travis-ci.org/Keep-Current/Engine.svg?branch=master)](https://travis-ci.org/Keep-Current/Engine)
 
 After studying a topic, keeping current with the news, published papers, advanced technologies and such proved to be a hard work.
 One must attend conventions, subscribe to different websites and newsletters, go over different emails, alerts and such while filtering the relevant data out of these sources.
