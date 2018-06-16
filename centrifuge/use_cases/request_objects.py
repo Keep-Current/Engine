@@ -1,9 +1,9 @@
 import collections
 
-from crawler.shared import request_object as req
+from centrifuge.shared import request_object as req
 
 
-class ArxivDocumentListRequestObject(req.ValidRequestObject):
+class DocumentKeywordsRequestObject(req.ValidRequestObject):
 
     def __init__(self, filters=None):
         self.filters = filters
@@ -12,10 +12,10 @@ class ArxivDocumentListRequestObject(req.ValidRequestObject):
     def from_dict(cls, adict):
         invalid_req = req.InvalidRequestObject()
 
-        if 'filters' in adict and not isinstance(adict['filters'], collections.Mapping):
-            invalid_req.add_error('filters', 'Is not iterable')
+        if 'doc' in adict and not isinstance(adict['doc'], collections.Mapping):
+            invalid_req.add_error('doc', 'Is not iterable')
 
         if invalid_req.has_errors():
             return invalid_req
 
-        return ArxivDocumentListRequestObject(filters=adict.get('filters', None))
+        return DocumentKeywordsRequestObject(filters=adict.get('doc', None))

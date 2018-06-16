@@ -27,7 +27,8 @@ This is a curated reading list of relevant resources for topics, which are relat
 * Folasade Isinkaye et al., 2015: [Recommendation systems: Principles, methods and
 evaluation](https://ac.els-cdn.com/S1110866515000341/1-s2.0-S1110866515000341-main.pdf?_tid=8f742bbe-a23e-4dda-ad84-bef8dae158c5&acdnat=1527070687_b2c9b07c2f2cf34f9706137b339da621)
 * Gastón Rodríguez, 2018: [Introduction to Recommender Systems in 2018](https://tryolabs.com/blog/introduction-to-recommender-systems/)
-* James Le, 2018: [The 4 Recommendation Engines That Can Predict Your Movie Tastes](https://towardsdatascience.com/the-4-recommendation-engines-that-can-predict-your-movie-tastes-109dc4e10c52).
+* Mustansar Ali Ghazanfar / Adam Prugel-Bennett, 2010: [A Scalable, Accurate Hybrid Recommender System](https://www.researchgate.net/publication/221306167_A_Scalable_Accurate_Hybrid_Recommender_System)
+* James Le, 2018: [The 4 Recommendation Engines That Can Predict Your Movie Tastes](https://towardsdatascience.com/the-4-recommendation-engines-that-can-predict-your-movie-tastes-109dc4e10c52)
 * Prince Grover, 2017: [Various Implementations of Collaborative Filtering](https://towardsdatascience.com/various-implementations-of-collaborative-filtering-100385c6dfe0)
 * Ankur Tomar, 2017: [ITEM-ITEM Collaborative filtering Recommender System in Python](https://medium.com/@tomar.ankur287/item-item-collaborative-filtering-recommender-system-in-python-cf3c945fae1e)
 

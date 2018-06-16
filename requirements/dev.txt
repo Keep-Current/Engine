@@ -4,4 +4,4 @@ pip
 wheel
 flake8
 Sphinx
-fastavro>=0.17.9
+Flask-Script
