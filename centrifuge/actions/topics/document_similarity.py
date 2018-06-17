@@ -23,10 +23,6 @@ class DocSimilarity(object):
         self.stopwords = nltk.corpus.stopwords.words('english')
 
     def initialize_corpus(self):
-
-        nltk.download('punkt')
-        nltk.download('stopwords')
-
         # Transformator:
         # self.tfidf = models.TfidfModel(self.corpus)
         # self.corpus_tfidf = self.tfidf[self.corpus]        
