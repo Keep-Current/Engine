@@ -8,7 +8,8 @@ import nltk
 class DocSimilarity(object):
 
     def __init__(self, base_filename='reasoning'):
-        dir_path = os.path.dirname(os.path.realpath(__file__)) + '/'
+        #dir_path = os.path.dirname(os.path.realpath(__file__)) + '/'
+        dir_path = 'C:\\Users\\liadm\\Projects\\KeepCurrent\\Engine\\centrifuge\\actions\\topics\\' 
         self.dictionary = corpora.Dictionary.load(dir_path + base_filename + '_corpura.dict')
         self.corpus = corpora.MmCorpus(dir_path + base_filename + '_bow.mm')
 
@@ -18,7 +19,10 @@ class DocSimilarity(object):
 
         self.corpus_tfidf = self.tfidf[self.corpus]
         
-        self.lsi_model = models.LsiModel(self.corpus_tfidf, id2word=self.dictionary, num_topics=20)
+        self.lsi_model = models.LsiModel(self.corpus_tfidf, 
+                                         id2word=self.dictionary, 
+                                         num_topics=20)
+        
         self.corpus_lsi = self.lsi_model[self.corpus_tfidf]
 
 
@@ -63,3 +67,9 @@ class DocSimilarity(object):
         
         sims = [self.compare_doc(index, doc) for doc in doc_list]        
         return sims
+
+
+
+measure_similarity = DocSimilarity()
+measure_similarity.initialize_corpus()
+parsed_documents = measure_similarity.compare_docs(unparsed_documents)
