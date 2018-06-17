@@ -6,9 +6,9 @@ from centrifuge.shared import response_object as res
 from centrifuge.serializers.json import document_serializer as ser
 
 from centrifuge.repository import crawler_arxiv_repo as ar
-from centrifuge.use_cases import extract_keywords_use_case as uc
+from centrifuge.use_cases import get_similar_docs_use_case as uc
 
-blueprint = Blueprint('compare', __name__)
+blueprint = Blueprint('find_similar', __name__)
 
 STATUS_CODES = {
     res.ResponseSuccess.
@@ -18,7 +18,7 @@ STATUS_CODES = {
     res.ResponseFailure.SYSTEM_ERROR: 500
 }
 
-@blueprint.route('/compare', methods=['GET'])
+@blueprint.route('/find_similar', methods=['GET'])
 def arxiv():
     qrystr_params = {
         'doc': {},
@@ -31,7 +31,8 @@ def arxiv():
     request_object = req.DocumentKeywordsRequestObject.from_dict(qrystr_params)
 
     repo = ar.CrawlerArxivRepo()
-    use_case = uc.CompareDocumentListUseCase(repo)
+
+    use_case = uc.GetSimilarDocumentsUseCase(repo)
 
     response = use_case.execute(request_object)
 

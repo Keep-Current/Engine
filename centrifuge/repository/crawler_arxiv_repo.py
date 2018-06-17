@@ -1,6 +1,6 @@
 import urllib.request
 import feedparser
-import json
+import ujson
 
 from centrifuge.domain import document as ad
 
@@ -26,7 +26,7 @@ class CrawlerArxivRepo:
         query = 'arxiv'
         with urllib.request.urlopen(self.base_url+query) as url:
             response = url.read()
-        parsed_response = feedparser.parse(response)
+        parsed_response = ujson.loads(response)
 
         return parsed_response
     
@@ -38,5 +38,5 @@ class CrawlerArxivRepo:
         """
         # num_added_total = 0
         parsed_response = self.run_query()                
-        return parsed_response.entries
+        return parsed_response
 

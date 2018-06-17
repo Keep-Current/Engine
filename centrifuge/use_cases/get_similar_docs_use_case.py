@@ -3,7 +3,7 @@ from centrifuge.shared import response_object as res
 
 from centrifuge.actions.topics import document_similarity
 
-class CompareDocumentListUseCase(uc.UseCase):
+class GetSimilarDocumentsUseCase(uc.UseCase):
 
     def __init__(self, repo):
         self.repo = repo

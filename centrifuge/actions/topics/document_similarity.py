@@ -68,7 +68,14 @@ class DocSimilarity(object):
         tokens = self.preprocess(doc)
         vec_bow = self.dictionary.doc2bow(tokens)
         vec_lsi = self.lsi_model[vec_bow]
-        yield index[vec_lsi]
+        return index[vec_lsi]
+
+    def add_score(self, idx, docs, sims, score_type):
+        doc = docs[idx]
+        doc['similarity_score'] = dict(enumerate(map(str, list(sims[idx]))))
+        doc['score_type'] = score_type
+        return doc
+
     
     def compare_docs(self, doc_list):
         """
@@ -77,14 +84,18 @@ class DocSimilarity(object):
         """
         # get the base corpus space
         index = similarities.MatrixSimilarity(self.lsi_model[self.corpus]) 
-        
-        sims = [self.compare_doc(index, doc) for doc in doc_list]
+
+        # small parsing:
+        abstracts = [item['abstract'] for item in doc_list]
+
+        sims = [self.compare_doc(index, abstract) for abstract in abstracts]
+
         avg_idx, special_idx = self.filter_top_results(sims)
 
-        avg_docs = [doc_list[idx] for idx in avg_idx]
-        special_docs = [doc_list[idx] for idx in special_idx]
+        avg_docs = [self.add_score(idx, doc_list, sims, 'avg_score') for idx in avg_idx]
+        special_docs = [self.add_score(idx, doc_list, sims, 'specific_similarity') for idx in special_idx]
 
-        return avg_docs +special_docs
+        return avg_docs + special_docs
 
     def filter_top_results(self, sims):
         # let's filter the top matches
