@@ -7,5 +7,5 @@ pytest-cov
 pytest-flask
 gunicorn
 flake8
-Sphinx
+ujson
 Flask-Script
