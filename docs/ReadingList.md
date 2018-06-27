@@ -1,12 +1,14 @@
 # Engine: Reading List
 This is a curated reading list of relevant resources for topics, which are related to the Engine development.
 
+
 ## NLP
 
 ### Basics
 * Tapio Luostarinen / Oskar Kohonen, 2013: [Using Topic Models in Content-Based News RecommenderSystems](http://emmtee.net/oe/nodalida13/conference/11.pdf)
 * Gaurav Maheshwari et al., 2017: [SimDoc: Topic Sequence Alignment based Document Similarity Framework](https://arxiv.org/pdf/1611.04822)
 * Bruno Trstenjak, 2013: [KNN with TF-IDF Based Framework for Text Categorization](https://ac.els-cdn.com/S1877705814003750/1-s2.0-S1877705814003750-main.pdf?_tid=ef844f67-9742-4520-bd74-ff661384de8b&acdnat=1527071647_35245894323b4084dc3d203fd77f6f02)
+* Michael D. Lee  / Brandon Pincombe / Matthew Welsh, 2005: [An Empirical Evaluation of Models of Text Document Similarity](http://www.socsci.uci.edu/~mdlee/lee_pincombe_welsh_document.PDF)
 * Susan Li, 2018: [Topic Modelling in Python with NLTK and Gensim](https://towardsdatascience.com/topic-modelling-in-python-with-nltk-and-gensim-4ef03213cd21)
 
 ### Advanced
