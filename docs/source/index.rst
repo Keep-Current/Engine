@@ -10,6 +10,9 @@ Welcome to keep-current Engine's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   modules
+
+.. automodule:: centrifuge
 
 
 Indices and tables
