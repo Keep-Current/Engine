@@ -12,7 +12,14 @@ Welcome to keep-current Engine's documentation!
 
    modules
 
-.. automodule:: centrifuge
+   definitions
+   domain
+   main
+   repository
+   shared
+   use_cases
+   version
+
 
 
 Indices and tables
