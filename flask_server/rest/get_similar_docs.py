@@ -38,4 +38,5 @@ def arxiv():
 
     return Response(json.dumps(response.value, cls=ser.DocEncoder),
                     mimetype='application/json',
+                    headers=[('Access-Control-Allow-Origin', '*')],
                     status=STATUS_CODES[response.type])
