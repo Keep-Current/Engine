@@ -1,6 +1,7 @@
 # Keep-Current
 
 <!-- Badges section here. -->
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/48afb8557d8047c5900a04dff5cbdaaa)](https://app.codacy.com/app/Keep-Current/Engine?utm_source=github.com&utm_medium=referral&utm_content=Keep-Current/Engine&utm_campaign=badger)
 [![BCH compliance](https://bettercodehub.com/edge/badge/Keep-Current/Engine?branch=master)](https://bettercodehub.com/)
 [![Build Status](https://travis-ci.org/Keep-Current/Engine.svg?branch=master)](https://travis-ci.org/Keep-Current/Engine)
 
