@@ -70,7 +70,7 @@ and test your installation by running the web server:
 
 ```bash
 # start server
-flask run python manage.py server
+python manage.py server
 ```
 
 ### Architecture
