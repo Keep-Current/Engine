@@ -4,32 +4,6 @@ We are so glad you're thinking about contributing to the Keep-Current project! I
 
 We want to ensure a welcoming environment for all the Keep-Current different repositories. Please follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
-We encourage you to read the [License](LICENSE) and the [ReadMe](README.md).
-
-All contributions to this project will be released under the Apache License. By submitting a pull request, you are agreeing to comply with this waiver of copyright interest.
-
-## Meetups
-
-We welcome anyone who would like to join and contribute. We meet regularly every month in Vienna through the Data Science Cafe meetup of the VDSG, show our progress and discuss the next steps. Please follow [our meetup page](https://www.meetup.com/Vienna-Data-Science-Group-Meetup/) to get updates regarding our next meeting.
-
-## Machine Learning & Natural Language Processing
-
-This repository is dedicated to machine-learning based engine. Among the items we handle here are document classifications, semantic representations of documents,  topics distance mapping, adaptation according to user's feedback, etc.
-
-If you're new to Machine Learning, we suggest starting by reading the following sources:
-
-* [Machine learning collection](https://github.com/collections/machine-learning)
-* [Natural Language Processing in Python Book](http://nltk.org/book/)
-* [Keon's awesome-nlp!](https://github.com/keon/awesome-nlp)
-
-If you wanna dig deeper in theories and methods which are relevant to developing this Engine, have a look at our curated reading list: `docs/ReadingList.md`
-
-### Recommended tools:# Welcome!
-
-We are so glad you're thinking about contributing to the Keep-Current project! If you're unsure about something, please don't hesitate to ask us.
-
-We want to ensure a welcoming environment for all the Keep-Current different repositories. Please follow the [Code of Conduct](CODE_OF_CONDUCT.md).
-
 We encourage you to read the [License](LICENSE) and the [Readme](README.md).
 
 ## How to Contribute
