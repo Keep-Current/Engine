@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+logzero = ">=1.3.1"
+feedparser = ">5.1"
+pandas = ">=0.22.0"
+numpy = ">=1.14.0"
+gensim = ">=3.2.0"
+scikit-learn = ">=0.19.1"
+scipy = ">=1.1.0"
+nltk = ">=3.3"
+pytest = "*"
+tox = "*"
+coverage = "*"
+pytest-cov = "*"
+pytest-flask = "*"
+gunicorn = "*"
+"flake8" = "*"
+ujson = "*"
+flask = "*"
+flask-Script = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
