@@ -22,6 +22,8 @@ gunicorn = "*"
 ujson = "*"
 flask = "*"
 flask-Script = "*"
+black = "*"
+pylint = "*"
 
 [dev-packages]
 
