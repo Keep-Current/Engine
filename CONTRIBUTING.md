@@ -50,22 +50,3 @@ As a general rule, always make sure that:
 - all tests pass
 
 We have several integration tools hooked up for reviewing pull requests. Make sure that those tests are also passing, and if not provide a detailled explanation why not and why it is not necessary to comply.
-
-We lean heavily on existing tools as well as developing our own new methods. We are colaborating through Google Colab notebooks. Among the existing tools we are using:
-
-* [TextBlob](http://textblob.readthedocs.io/en/dev/)
-* [spaCy](https://spacy.io/)
-* [NLTK](https://www.nltk.org/)
-
-### Vision & Roadmap
-
-We want to use this goal also as a reason to have a playground to implement, test, hack and compare different models.
-
-Currently, we're working on:
-
-* Collecting data to create a 'gold-truth' dataset, to be able to compare different models on.
-* Developing unsupervised models for document clustering
-
-## I have different skills
-
-If you wish to assist in different aspects, such as Data Engineering, Web development, DevOps, we have divided the project to several additional repositories focusing on these topics.
