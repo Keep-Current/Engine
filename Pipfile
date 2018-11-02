@@ -24,6 +24,7 @@ flask = "*"
 flask-Script = "*"
 black = "*"
 pylint = "*"
+requests = ">=2.20.0"
 
 [dev-packages]
 
