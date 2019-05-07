@@ -227,7 +227,7 @@
                 "sha256:74c935a1b8bb9a3947c50a54766a969d4846290e1e788ea44c1392163723c3bd",
                 "sha256:f84be1bb0040caca4cea721fcbbbbd61f9be9464ca236387158b0feea01914a4"
             ],
-            "version": "==2.10"
+            "version": "==2.10.1"
         },
         "jmespath": {
             "hashes": [
@@ -447,7 +447,7 @@
                 "sha256:63b52e3c866428a224f97cab011de738c36aec0185aa91cfacd418b5d58911d1",
                 "sha256:ec22d826a36ed72a7358ff3fe56cbd4ba69dd7a6718ffd450ff0e9df7a47ce6a"
             ],
-            "version": "==2.19.1"
+            "version": "==2.20.0"
         },
         "s3transfer": {
             "hashes": [
@@ -593,7 +593,7 @@
                 "sha256:b5725a0bd4ba422ab0e66e89e030c806576753ea3ee08554382c14e685d117b5"
             ],
             "markers": "python_version != '3.1.*' and python_version != '3.2.*' and python_version < '4' and python_version >= '2.6' and python_version != '3.3.*' and python_version != '3.0.*'",
-            "version": "==1.23"
+            "version": "==1.24.2"
         },
         "virtualenv": {
             "hashes": [
